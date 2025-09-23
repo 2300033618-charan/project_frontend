@@ -1,0 +1,103 @@
+/* 🔥 Full-screen background with image (FIXED) */
+.login-container {
+  position: fixed; /* Ensures full coverage */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("image.png"); /* Replace with your image */
+  background-size: cover; /* Stretches image to fill screen */
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  overflow: hidden; /* Prevents scrollbars */
+}
+
+/* Blurred card in the center */
+.login-card {
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+  backdrop-filter: blur(10px); /* Blur effect */
+  border-radius: 20px; /* Rounded corners */
+  padding: 30px;
+  width: 350px; /* Adjust width as needed */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
+  text-align: center;
+}
+
+/* Rest remains the same */
+.app-title {
+  color: white;
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+.login-title {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.login-input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+  outline: none;
+}
+
+.login-button {
+  width: 100%;
+  padding: 12px;
+  margin: 15px 0;
+  border: none;
+  border-radius: 8px;
+  background: #4a6bff;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-button:hover {
+  background: #3a5bef;
+}
+
+.link-button {
+  background: none;
+  border: none;
+  color: #4a6bff;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+  margin-left: 5px;
+}
+
+.link-button:hover {
+  color: #3a5bef;
+}
+
+.error-text {
+  color: #ff6b6b;
+  margin-bottom: 10px;
+}
+
+.success-text {
+  color: #51cf66;
+  margin-bottom: 10px;
+}
+
+.toggle-auth {
+  color: white;
+  font-size: 0.9rem;
+}
